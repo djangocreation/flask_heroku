@@ -18,13 +18,13 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'this_should_be_configur
 # Routing for your application.
 ###
 
-@app.route('/')
+@app.route('/', methods=['GET'])
 def home():
     """Render website's home page."""
     return render_template('home.html')
 
 
-@app.route('/about/')
+@app.route('/about/', methods=['GET'])
 def about():
     """Render the website's about page."""
     return render_template('about.html')
