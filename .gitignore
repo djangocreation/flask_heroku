@@ -7,7 +7,6 @@ lib
 # Python Packages
 *.egg
 *.egg-info
-bin
 build
 dist
 sdist
