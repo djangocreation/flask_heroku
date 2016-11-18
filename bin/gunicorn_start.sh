@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # CONFIGURATION DEPUIS FABRIC
-NAME="$project_name"                                  # Name of the application
-PROJECTDIR=$project_root/project             # Django project directory
-SOCKFILE=$project_root/run/gunicorn.sock  # we will communicte using this unix socket
-USER=$project_user                        # the user to run as
-GROUP=$project_user                       # the group to run as
+NAME="_project_name"                                  # Name of the application
+PROJECTDIR=_project_root/project             # Django project directory
+SOCKFILE=_project_root/run/gunicorn.sock  # we will communicte using this unix socket
+USER=_project_user                        # the user to run as
+GROUP=_project_user                       # the group to run as
 
 # CONFIGURATION SUR LE SQUELETTE
 NUM_WORKERS=3                                     # how many worker processes should Gunicorn spawn
